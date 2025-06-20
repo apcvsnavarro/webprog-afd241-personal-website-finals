@@ -1,47 +1,45 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div id="app">
+    <section class="profile">
+      <img src="https://i.pravatar.cc/120" alt="Your Name" class="avatar" />
+      <h1>Your Name</h1>
+      <p>Short bio about yourself. Vue.js developer. 🚀</p>
+      <a href="mailto:you@example.com">Contact Me</a>
+    </section>
+    <Guestbook />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<script setup>
+import Guestbook from './components/Guestbook.vue'
+</script>
+
+<style>
+body {
+  background: #f9f9f9;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
 }
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+#app {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
 }
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.profile {
+  text-align: center;
+  margin-bottom: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #eee;
+  padding: 2rem;
+}
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+@media (max-width: 600px) {
+  #app, .profile { padding: 1rem; }
+  .avatar { width: 80px; }
 }
 </style>
