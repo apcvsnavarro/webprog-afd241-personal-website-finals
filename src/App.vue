@@ -24,12 +24,12 @@ body {
 }
 
 #app {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: rgba(75, 54, 124, 0.85);
-  border-radius: 16px;
-  box-shadow: 0 0 20px #BFA6E8;
+  position: relative;
+  min-height: 100vh;
+  background: url('https://upload-os-bbs.hoyolab.com/upload/2024/04/30/248389737/137a1ce59bd64c0142af04ff5fa10d2e_8606599350309523716.gif') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  color: white; /* Adjust text color for contrast */
 }
 
 .profile {
