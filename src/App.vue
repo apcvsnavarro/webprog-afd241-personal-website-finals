@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <section class="profile">
-      <img src="https://i.pravatar.cc/120" alt="Your Name" class="avatar" />
-      <h1>Your Name</h1>
-      <p>Short bio about yourself. Vue.js developer. 🚀</p>
-      <a href="mailto:you@example.com">Contact Me</a>
+      <img src="https://your-image-url.com/robin-avatar.png" alt="Robin Inspired Avatar" class="avatar" />
+      <h1>Robin</h1>
+      <p>Mystical traveler of the stars, seeker of knowledge and wisdom.</p>
+      <a href="mailto:robin@example.com">Contact Me</a>
     </section>
     <Guestbook />
   </div>
